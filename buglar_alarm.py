@@ -1,15 +1,10 @@
 from boltiot import Bolt,Sms
-import json, conf, time
+import json, time, pickle, cv2
+from alarm_system import conf, Facerecognition_identification
 
 mybolt = Bolt(conf.api_key,conf.device_id)
-sms = Sms(conf.SID,conf.AUTH_TOKEN,conf.TO_NUMBER,conf.FROM_NUMBER)
 
-threshold = 10
-
-#function to turn on buzzer
-def intruder():
-	mybolt.digitalWrite('1','HIGH')
-	mybolt.digitalWrite('2','LOW')
+threshold = 15
 
 while True:
 	#reading LDR data
@@ -20,10 +15,7 @@ while True:
 	try:
 		if current_voltage < threshold:
 			print('current voltage dropped')
-			intruder()
-			print('Sending SMS via twilio')
-			response = sms.send_sms('ALERT....Vault opened')
-			print(str(response.status))
+			Facerecognition_identification.camera()
 	except Exception as e:
 		print('Error: ', e)
 	time.sleep(30)

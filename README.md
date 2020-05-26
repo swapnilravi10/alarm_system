@@ -3,7 +3,7 @@ Alarm System for your personal vault at home.
 
 <b>Objective</b>
 
-The basic idea behind the project is to alert the user about intrusion or invalid access to their vault. The system will turn on a alarm and send a SMS immediately to the owner. Incase of accidental alarm or otherwise to turn off the alarm owner can make use of google assistance to turn of alarm from any where.
+The basic idea behind the project is to alert the user about intrusion or invalid access to their vault. The system will turn on a alarm, send a SMS and an email immediately to the owner. Incase of accidental alarm or otherwise to turn off the alarm owner can make use of google assistance to turn of alarm from any where.
 
 Components and Setup-
 

@@ -9,6 +9,7 @@ FROM_NUMBER = '+19089982419'
 TO_NUMBER = ''
 
 # Email you want to send the update from (only works with gmail)
-fromEmail = 'swapnil.ravi10@gmail.com'
+fromEmail = ''
 fromEmailPassword = ''
-toEmail = 'swapnil.ravi10@gmail.com'
+toEmail = ''
+

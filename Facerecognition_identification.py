@@ -56,16 +56,6 @@ def camera():
         ##Display screen
         cv2.imshow("Capturing", frame)
 
-        # ##if the label name is in list then authorised
-        # for i in range(len(list_labels)):
-        #     if labels[id_] in list_labels[i]:
-        #         print("Authorised Personnel")
-        #         break
-        #
-        #     elif labels[id_] not in list_labels:
-        #         print("Unauthorised")
-
-
 
         ##Close frame on pressing "q"
         key = cv2.waitKey(1)
@@ -75,5 +65,3 @@ def camera():
 
     video.release()
     cv2.destroyAllWindows()
-
-camera()

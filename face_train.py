@@ -5,7 +5,7 @@ import cv2
 import pickle
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-image_dir = os.path.join(BASE_DIR,"swap_image_train")
+image_dir = os.path.join(BASE_DIR,"image_train")
 # print(image_dir)
 
 face_cascade = cv2.CascadeClassifier("C:\\Users\\Swapnil\\OpenCV_git_projects\\Cascades\\haarcascade_frontalface_alt2.xml")
